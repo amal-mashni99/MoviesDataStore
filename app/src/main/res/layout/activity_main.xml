@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MainActivity"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:autoText="false"
+        android:freezesText="false"
+        android:text="Search for youre movie using one or more of these catagores"
+        android:textAlignment="center"
+        android:textColor="#F5F4F8"
+        android:textColorLink="#F3EDED"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            android:text="Movie title"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:hapticFeedbackEnabled="true"
+            android:isScrollContainer="false"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            android:text="Movie year"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"></TextView>
+
+        <Spinner
+            android:id="@+id/year"
+            android:layout_width="170dp"
+            android:layout_height="38dp"
+            android:layout_gravity="fill"
+            android:background="@android:drawable/btn_dropdown"
+            android:hapticFeedbackEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="59dp"
+            android:paddingRight="20dp"
+            android:text="Movie genre"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"></TextView>
+
+        <Spinner
+            android:id="@+id/genre"
+            android:layout_width="170dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="2dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:popupBackground="@android:drawable/editbox_dropdown_light_frame"></Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:background="#8A1010"
+        android:includeFontPadding="true"
+        android:onClick="btnGetMoviesOnClick"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"></Button>
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="100dp"
+        android:textAlignment="center"
+        android:textColor="#FCFCFD"
+        android:textSize="18sp"></EditText>
+
+
+</LinearLayout>
